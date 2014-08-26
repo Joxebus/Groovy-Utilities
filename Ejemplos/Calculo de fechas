@@ -1,0 +1,14 @@
+Date fechaInicial = new Date(2000-1900,10-1,14)
+Date fechaActual = new Date()
+
+def anios = { dias ->
+    "${(dias/365).toInteger()} años y ${dias%365} días laborando"
+}
+
+println fechaInicial
+println fechaActual
+def antiguedad = fechaActual - fechaInicial
+println antiguedad
+println anios(antiguedad)
+
+
